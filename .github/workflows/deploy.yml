@@ -9,9 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
-      - name: Add deployment SSH private key to agent
-        run: |
-          eval $(ssh-agent -a)
-          #ssh-agent -a /tmp/ssh_agent.sock > /dev/null
-          ssh-add - <<< "${{ secrets.DEPLOY_SSH }}"
-          scp -r src/ root@70.34.212.236:/var/www/ostlund
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@master
+        with:
+          host: "70.34.212.236"
+          username: root
+          port: "22"
+          key: ${{ secrets.DEPLOY_SSH }}
+          source: "src"
+          target: "/var/www/ostlund"
