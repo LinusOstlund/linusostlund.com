@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Add deployment SSH private key to agent
         run: |
-          eval $(ssh-agent -s)
+          eval $(ssh-agent -a)
           #ssh-agent -a /tmp/ssh_agent.sock > /dev/null
           ssh-add - <<< "${{ secrets.DEPLOY_SSH }}"
           scp -r src/ root@70.34.212.236:/var/www/ostlund
