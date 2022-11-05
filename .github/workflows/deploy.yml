@@ -17,4 +17,4 @@ jobs:
           password: ${{ secrets.VULTR_PASSWORD }}
           port: "22"
           source: "src/"
-          target: "/var/www/ostlund"
+          target: "/var/www/ostlund/"
