@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Linus's Webpage</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<h1>Hello, I am Linus Östlund</h1>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">🤔<br> About </a>
+        <a href="contact.html">🙋🏻<br> Contact </a>
+        <a class="active" href="projects.html">👷🏼‍♂️<br> Projects</a>
+        <a href="files/CV_20221107.pdf">📚<br> CV </a>
+        <a href="chatbot.html">🤖<br> Chatbot</a>
+    </div>
+
+
+    <h1>👷🏼‍♂️ Projects</h1>
+    <p>I've gathered projects from my free time here. Each title link to the corresponding Github repository. </p>
+    <h2>🦄 <a href="https://github.com/LinusOstlund/infinity-quiz">Infinity Quiz</a></h2>
+    <p>Infinity Quiz is a quiz game that I made to learn more about OpenAIs API. It is randomizing question from
+        category, and subcategory tuples, and provide answers with different personalities <i>ad infinitum</i>.</p>
+
+    <h2>👁️ <a href="https://github.com/siberov/PRoofreader/tree/python-init">Proofreader</a></h2>
+    <p> After spending lots of time proofreading Github README's, me and a collegue wanted to automate the
+        process. Proofreader opens a pull request for every push and reviews the README, coming with suggestions and
+        corrections. We used
+        OpenAIs API with function calls to decide when a correction was due, and we integrated the corrections into
+        Githubs GUI. <br><br>It does work, but the utility is arguably quite low in it's current state (look at <a
+            href="https://github.com/siberov/PRoofreader/pull/3">this PR</a>🤪). It is spewing suggestions for every
+        paragraph (or are we just poor writers?). The corrections are not idempotent, so it just keeps on correcting
+        already
+        proofread paragraphs.
+        The project is on hold for now, but could be fixed and extended to incorporate code (e.g, automatic code
+        repairing
+        with pretty pull requests).
+    </p>
+    <h2>🎶 <a href="https://github.com/LinusOstlund/DD2424-project">Symbolic Music Generation</a></h2>
+    <p> A project made for the course <a href="https://www.kth.se/student/kurser/kurs/DD2424?l=en">DD2424 Deep Learning
+            in Data Science</a>. We coded two models (LSTM and Transformer) from scratch in PyTorch to generate
+        MIDI, and trained on a pop music dataset. We used <a href="https://mlflow.org">MLFlow</a> to monitor and export
+        the model, experimenting with various features such as <a
+            href="https://github.com/LinusOstlund/DD2424-project/blob/main/MLproject">MLproject-files</a> (e.g,
+        Makefiles for ML-projects). With some boundaries on the data, we managed to produce something similar to music.
+        Looking at the Github repo, it <i>should</i> be reproducible from any machine. At the final poster session, it
+        was crowned
+        second coolest project of our course iteration! 🤩</p>
+    </p>
+
+    <h2>🧐 Do you want more?</h2>
+    If you want to find more projects I've been working on, you can check my <a
+        href="https://github.com/linusostlund/">GitHub
+        profile</a> where I've gathered school projects, and other unfinished work.<br>
+    <br>
+
+
+</body>
+
+</html>
