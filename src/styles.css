@@ -1,67 +1,77 @@
 body {
-    background-color: #fff;
-    color: #000;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    margin: 0;
+  background-color: #fff;
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0;
 }
 
 html {
-    max-width: 70ch;
-    padding: 3em 1em;
-    margin: auto;
-    line-height: 1.75;
-    font-size: 1.25em;
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    margin: 3em 0 1em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 3em 0 1em;
 }
 
-p,ul,ol {
-    margin-bottom: 2em;
-    color: #1d1d1d;
-    font-family: sans-serif;
+p,
+ul,
+ol {
+  margin-bottom: 2em;
+  color: #1d1d1d;
+  font-family: sans-serif;
 }
 
 
 #mydiv {
-    background-color: #fff;
-    margin: 10 10 10px;
-    display: flex;
-    flex-direction: row;
+  background-color: #fff;
+  margin: 10 10 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 /* top nav :/ */
 .topnav {
-    background-color: #fff;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    color: black;
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: white;
-    color: blue;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: white;
-    font-weight: bold;
-    color: blue;
-  }
+  background-color: #fff;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
 
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: blue;
+}
 
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  font-weight: bold;
+  color: blue;
+}
 
-
-
+.chatbot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  /* 100% of the viewport height */
+}

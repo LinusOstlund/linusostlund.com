@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Linus's Webpage</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<h1>Hello, I am Linus Östlund</h1>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">🤔 About </a>
+        <a href="index.html">🙋🏻 Contact & Projects</a>
+        <a href="files/CV_20221107.pdf">📚 CV </a>
+        <a class="active" href="chatbot.html">🤖 Chatbot</a>
+    </div>
+    <br>
+    <flowise-fullchatbot></flowise-fullchatbot>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.initFull({
+            chatflowid: "22eda65a-21c0-4f62-b6d0-dbe67c0083cc",
+            apiHost: "http://70.34.212.236:3000",
+            theme: {
+                chatWindow: {
+                    welcomeMessage: "Hello! I am a chatbot connected to OpenAI, and I know how to Google. AMA!",
+                    height: 500,
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
